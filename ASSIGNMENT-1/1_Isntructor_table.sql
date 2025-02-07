@@ -18,9 +18,3 @@ INSERT INTO Instructor VALUES(76766, 'Crick', 'Biology', 72000);
 INSERT INTO Instructor VALUES(83821, 'Brandt', 'Comp. Sci.', 92000);
 INSERT INTO Instructor VALUES(98345, 'Kim', 'Elec. Eng.', 80000);
 
--- CREATE TABLE Instructor (
---     ID INT(5),
---     Name VARCHAR(30),
---     Dept_name VARCHAR(20),
---     Salary DECIMAL(10,2)
--- );
