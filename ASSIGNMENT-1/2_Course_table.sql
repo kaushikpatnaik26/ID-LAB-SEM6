@@ -1,7 +1,7 @@
 CREATE TABLE Course (
-    Course_id VARCHAR(10) PRIMARY KEY,
-    Title VARCHAR(30) NOT NULL,
-    Dept_name VARCHAR(20) NOT NULL,
+    Course_id VARCHAR(10),
+    Title VARCHAR(30) ,
+    Dept_name VARCHAR(20) ,
     Credits NUMBER(2)
 );
 
