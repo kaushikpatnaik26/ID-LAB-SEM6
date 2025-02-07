@@ -1,7 +1,7 @@
 CREATE TABLE Department (
     Dept_name VARCHAR(20),
     Building VARCHAR(20),
-    Budget NUMBER(10,2)
+    Budget NUMBER(10)
 );
 
 INSERT INTO Department VALUES('Biology', 'Watson', 90000);
