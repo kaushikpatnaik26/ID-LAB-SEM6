@@ -21,12 +21,5 @@ INSERT INTO Course VALUES ('MU-199', 'Music Video Production', 'Music', 3);
 INSERT INTO Course VALUES ('PHY-101', 'Physical Principles', 'Physics', 4);
 
 
--- CREATE TABLE Course (
---     Course_id VARCHAR(10) PRIMARY KEY,
---     Title VARCHAR(30) NOT NULL,
---     Dept_name VARCHAR(20) NOT NULL,
---     Credits INT(2) CHECK (Credits >= 0)
--- );
-
 
 
