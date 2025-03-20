@@ -1,0 +1,219 @@
+a. 
+SELECT INITCAP('kaushik') AS Capitalized_Name
+FROM DUAL;
+
+-- CAPITAL
+-- -------
+-- Kaushik
+
+
+b.
+SELECT SUBSTR('kaushik', 2, 5) AS Substring_Name
+FROM DUAL;
+
+-- SUBST
+-- -----
+-- aushi
+
+c
+SELECT LENGTH('Institute of Technical Education and Research') AS University_Name_Length
+FROM DUAL;
+
+-- UNIVERSITY_NAME_LENGTH
+-- ----------------------
+-- 45
+
+d.
+SELECT INITCAP(Name) AS Capitalized_Name
+FROM Faculty_info;
+
+-- CAPITALIZED_NAME
+-- --------------------------------------------------
+-- Srinivasan
+-- Wu
+-- Mozart
+-- Einstein
+-- El Said
+-- Gold
+-- Katz
+-- Califieri
+-- Singh
+-- Crick
+-- Brandt
+-- Kim
+
+-- 12 rows selected.
+
+e.
+SELECT SUBSTR(Department, 1, 3) AS Department_Code
+FROM Faculty_info;
+
+-- DEP
+-- ---
+-- Com
+-- Fin
+-- Mus
+-- Phy
+-- His
+-- Phy
+-- Com
+-- His
+-- Fin
+-- Bio
+-- Com
+-- Ele
+
+-- 12 rows selected
+
+f.
+SELECT TO_CHAR(date_of_join, 'Month') AS Joining_Month
+FROM Faculty_info;
+
+-- JOINING_M
+-- ---------
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+-- March
+
+-- 12 rows selected.
+
+
+g.
+SELECT TO_CHAR(date_of_join, 'DD/MM/YY') AS date_of_join_Format
+FROM Faculty_info;
+
+-- DATE_OF_
+-- --------
+-- 25/03/04
+-- 26/03/04
+-- 27/03/04
+-- 28/03/04
+-- 29/03/04
+-- 30/03/04
+-- 31/03/04
+-- 24/03/04
+-- 23/03/04
+-- 22/03/04
+-- 21/03/04
+-- 20/03/04
+
+-- 12 rows selected
+
+h.
+SELECT MONTHS_BETWEEN(SYSDATE, date_of_join) AS Experience_in_Months
+FROM Faculty_info;
+
+-- EXPERIENCE_IN_MONTHS
+-- --------------------
+-- 	  251.861644
+-- 	  251.829385
+-- 	  251.797127
+-- 	  251.764869
+-- 	  251.732611
+-- 	  251.700353
+-- 	  251.668095
+-- 	  251.893902
+-- 	    251.92616
+-- 	  251.958418
+-- 	  251.990676
+-- 		 252
+
+-- 12 rows selected.
+
+i.
+SELECT TRUNC(MONTHS_BETWEEN(SYSDATE, date_of_join) / 12) AS Years,
+       MOD(MONTHS_BETWEEN(SYSDATE, date_of_join), 12) AS Months
+FROM Faculty_info;
+
+
+--      YEARS     MONTHS
+-- ---------- ----------
+-- 	20  11.861654
+-- 	20 11.8293959
+-- 	20 11.7971378
+-- 	20 11.7648798
+-- 	20 11.7326217
+-- 	20 11.7003636
+-- 	20 11.6681056
+-- 	20  11.893912
+-- 	20 11.9261701
+-- 	20 11.9584282
+-- 	20 11.9906862
+-- 	21	    0
+
+-- 12 rows selected.
+
+j.
+SELECT TO_CHAR(date_of_join, 'Day') AS Day_of_Joining
+FROM Faculty_info;
+
+-- DAY_OF_JO
+-- ---------
+-- Thursday
+-- Friday
+-- Saturday
+-- Sunday
+-- Monday
+-- Tuesday
+-- Wednesday
+-- Wednesday
+-- Tuesday
+-- Monday
+-- Sunday
+-- Saturday
+
+-- 12 rows selected
+
+k.
+SELECT SYSDATE + 15 AS Date_After_15_Days
+FROM DUAL;
+
+-- DATE_AFTE
+-- ---------
+-- 04-APR-25
+
+l.
+SELECT TRUNC(94204.27348, 2) AS Truncated_Value
+FROM DUAL;
+
+-- TRUNCATED_VALUE
+-- ---------------
+-- 94204.27
+
+m.
+SELECT 5 + POWER(8, 9) AS Expression_Value
+FROM DUAL;
+
+-- EXPRESSION_VALUE
+-- ----------------
+-- 134217733
+
+n.
+SELECT SQRT(6464312) AS Square_Root
+FROM DUAL;
+
+-- SQUARE_ROOT
+-- -----------
+-- 2542.50113
+
+o.
+SELECT LOWER('HELLO ITER') AS lower_case
+FROM DUAL;
+
+-- LOWER_CASE
+-- ----------
+-- hello iter
+
+
+TRUNCATED_VALUE
+-- ---------------
+-- 94204.27
