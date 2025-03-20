@@ -1,0 +1,16 @@
+-- SELECT Dept_name, COUNT(*) AS Number_Of_Instructors, SUM(Salary) AS Total_Salary
+-- FROM Faculty_Info
+-- WHERE Department IN ('Physics', 'Comp. Sci.')
+-- GROUP BY Department;
+
+
+SELECT Department, COUNT(*) AS Number_Of_Instructors, SUM(Salary) AS Total_Salary
+FROM Faculty_Info
+WHERE Department IN ('Physics', 'Comp. Sci.')
+GROUP BY Department;
+
+
+-- DEPARTMENT	     NUMBER_OF_INSTRUCTORS TOTAL_SALARY
+-- -------------------- --------------------- ------------
+-- Physics 				 2	 182000
+-- Comp. Sci.				 3	 232000

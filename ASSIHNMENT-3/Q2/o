@@ -1,0 +1,8 @@
+SELECT SUM(Budget) AS Total_Budget
+FROM Department
+WHERE Builder = 'Watson';
+
+
+-- TOTAL_BUDGET
+-- ------------
+--        90000

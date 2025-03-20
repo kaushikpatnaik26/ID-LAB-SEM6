@@ -1,0 +1,7 @@
+SELECT SUM(Credits) AS Total_Credits
+FROM Course
+WHERE Department = 'Comp. Sci.';
+
+-- TOTAL_CREDITS
+-- -------------
+-- 17

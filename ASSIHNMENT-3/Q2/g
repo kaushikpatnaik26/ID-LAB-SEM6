@@ -1,0 +1,10 @@
+SELECT Department, SUM(Credits) AS Total_Credits
+FROM Course
+WHERE Department IN ('Comp. Sci.', 'Biology')
+GROUP BY Department;
+
+
+-- DEPARTMENT	     TOTAL_CREDITS
+-- -------------------- -------------
+-- Comp. Sci.			17
+-- Biology 			11

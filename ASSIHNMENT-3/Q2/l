@@ -1,0 +1,11 @@
+SELECT Department
+FROM Faculty_Info
+GROUP BY Department
+HAVING COUNT(*) < 2;
+
+-- DEPARTMENT
+-- --------------------
+-- Elec. Eng.
+-- Biology
+-- Music
+

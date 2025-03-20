@@ -1,0 +1,15 @@
+SELECT Department
+FROM Faculty_Info
+GROUP BY Department
+HAVING SUM(Salary) > 50000;
+
+-- DEPARTMENT
+-- --------------------
+-- Elec. Eng.
+-- Physics
+-- Comp. Sci.
+-- Finance
+-- Biology
+-- History
+
+-- 6 rows selected.

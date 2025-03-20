@@ -1,0 +1,17 @@
+SELECT Department, COUNT(*) AS Num_Instructors 
+FROM Faculty_Info 
+GROUP BY Department 
+ORDER BY Num_Instructors DESC;
+
+
+-- DEPARTMENT	     NUM_INSTRUCTORS
+-- -------------------- ---------------
+-- Comp. Sci.			   3
+-- Physics 			   2
+-- Finance 			   2
+-- History 			   2
+-- Biology 			   1
+-- Music				   1
+-- Elec. Eng.			   1
+
+-- 7 rows selected.

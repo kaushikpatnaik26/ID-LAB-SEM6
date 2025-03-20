@@ -1,0 +1,7 @@
+SELECT MAX(Salary) AS Max_Comp_Sci_Salary
+FROM Faculty_Info
+WHERE Department = 'Comp. Sci.';
+
+MAX_COMP_SCI_SALARY
+-------------------
+	      92000

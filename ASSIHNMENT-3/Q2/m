@@ -1,0 +1,6 @@
+SELECT Department, COUNT(*) AS Num_Instructors
+FROM Faculty_Info
+WHERE Department != 'Finance'
+GROUP BY Department
+HAVING COUNT(*) >= 2
+ORDER BY Num_Instructors DESC;

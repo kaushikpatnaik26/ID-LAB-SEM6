@@ -1,0 +1,8 @@
+SELECT Semester, COUNT(*) AS Num_Courses FROM Teaches
+GROUP BY Semester;
+
+-- SEMESTER   NUM_COURSES
+-- ---------- -----------
+-- Spring		    10
+-- Summer		     2
+-- Fall		     3

@@ -1,0 +1,13 @@
+SELECT Builder, SUM(Budget) AS Total_Budget FROM Department GROUP BY Builder;
+
+-- SELECT Building, SUM(Budget) AS Total_Budget
+-- FROM Department
+-- GROUP BY Building;
+
+
+-- BUILDER 	     TOTAL_BUDGET
+-- -------------------- ------------
+-- Painter 		   170000
+-- Watson			    90000
+-- Taylor			   185000
+-- Packard 		    80000
